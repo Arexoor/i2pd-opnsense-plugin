@@ -1,0 +1,9 @@
+<acl>
+    <page-user-i2pd>
+        <name>i2pd settings</name>
+        <patterns>
+            <pattern>ui/i2pd/*</pattern>
+            <pattern>api/i2pd/*</pattern>
+        </patterns>
+    </page-user-i2pd>
+</acl>

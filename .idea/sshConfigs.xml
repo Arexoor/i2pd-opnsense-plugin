@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="192.168.178.80" id="383636a7-b31b-4f5c-be14-5603d7942883" port="22" customName="opnsenseTest" nameFormat="CUSTOM" username="root" useOpenSSHConfig="true">
+        <option name="customName" value="opnsenseTest" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="192.168.178.81" id="a53960ed-9df5-498d-9e7a-770b5f2cc0d7" port="22" customName="FreeBSD13" nameFormat="CUSTOM" username="root" useOpenSSHConfig="true">
+        <option name="customName" value="FreeBSD13" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>

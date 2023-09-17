@@ -1,0 +1,5 @@
+<menu>
+    <Services>
+        <i2pd VisibleName="I2PD" cssClass="fa fa-comment-o fa-fw" url="/ui/i2pd"/>
+    </Services>
+</menu>

@@ -1,0 +1,52 @@
+<form>
+    <field>
+        <id>i2pd.HTTPwebconsole.enabled</id>
+        <label>Enabled</label>
+        <type>checkbox</type>
+        <help>Enable the Web Console (default: true)</help>
+    </field>
+    <field>
+        <id>i2pd.HTTPwebconsole.address</id>
+        <label>IP address</label>
+        <type>text</type>
+        <help>Address service will listen on (default: 127.0.0.1)</help>
+    </field>
+    <field>
+        <id>i2pd.HTTPwebconsole.port</id>
+        <label>Port</label>
+        <type>text</type>
+        <help>Port service will listen on (default: 7070)</help>
+    </field>
+    <field>
+        <id>i2pd.HTTPwebconsole.auth</id>
+        <label>Authentication</label>
+        <type>checkbox</type>
+        <help>Enable Web Console authentication (default: false)\n
+            You should not use Web Console via public networks without additional encryption.\n
+            HTTP authentication is not encryption layer!</help>
+    </field>
+    <field>
+        <id>i2pd.HTTPwebconsole.user</id>
+        <label>User</label>
+        <type>text</type>
+        <help>Web Console authentication username (default: i2pd)</help>
+    </field>
+    <field>
+        <id>i2pd.HTTPwebconsole.pass</id>
+        <label>Password</label>
+        <type>password</type>
+        <help>Web Console authentication password (default: "changeme")</help>
+    </field>
+    <field>
+        <id>i2pd.HTTPwebconsole.strictheaders</id>
+        <label>Strictheaders</label>
+        <type>checkbox</type>
+        <help>Enable strict host checking on WebUI. (default: "true")</help>
+    </field>
+    <field>
+        <id>i2pd.HTTPwebconsole.hostname</id>
+        <label>Hostname</label>
+        <type>text</type>
+        <help>Expected hostname for WebUI (default: "localhost")</help>
+    </field>
+</form>

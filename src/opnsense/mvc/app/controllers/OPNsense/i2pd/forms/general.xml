@@ -1,0 +1,33 @@
+<form>
+    <field>
+        <id>i2pd.general.Enabled</id>
+        <label>Enabled</label>
+        <type>checkbox</type>
+        <help>Enable this feature</help>
+    </field>
+    <field>
+        <id>i2pd.general.ifname</id>
+        <label>Interface</label>
+        <type>select_multiple</type>
+        <style>dropdownstyle</style>
+        <help>Add more than localhost IP addresses to listen IPs for connections.</help>
+    </field>
+    <field>
+        <id>i2pd.general.bandwidth</id>
+        <label>Bandwidth</label>
+        <type>text</type>
+        <help>L limit bandwidth to 32 KB/sec, O - to 256 KB/sec, P - to 2048 KB/sec, X - unlimited Default is L (regular node) and X if floodfill mode enabled. If you want to share more bandwidth without floodfill mode, uncomment that line and adjust value to your possibilities. Value can be set to integer in kilobytes, it will apply that limit and flag will be used from next upper limit (example: if you set 4096 flag will be X, but real limit will be 4096 KB/s).</help>
+    </field>
+    <field>
+        <id>i2pd.general.share</id>
+        <label>Share</label>
+        <type>text</type>
+        <help>Max % of bandwidth limit for transit. 0-100 (default: 100)</help>
+    </field>
+    <field>
+        <id>i2pd.general.family</id>
+        <label>Family</label>
+        <type>text</type>
+        <help>Specify a family, router belongs to (default - none)</help>
+    </field>
+</form>

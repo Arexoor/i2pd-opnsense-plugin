@@ -1,0 +1,92 @@
+<model>
+    <mount>//OPNsense/i2pd</mount>
+    <description>
+        i2pd plugin
+    </description>
+    <items>
+        <!-- container -->
+        <general>
+            <!-- fields -->
+            <Enabled type="BooleanField">
+                <default>1</default>
+                <Required>Y</Required>
+            </Enabled>
+            <ifname type="InterfaceField">
+                <Required>N</Required>
+                <Multiple>Y</Multiple>
+            </ifname>
+            <bandwidth type="IntegerField">
+                <MinimumValue>1</MinimumValue>
+                <default>256</default>
+                <Required>N</Required>
+            </bandwidth>
+            <share type="IntegerField">
+                <MinimumValue>0</MinimumValue>
+                <MaximumValue>100</MaximumValue>
+                <default>80</default>
+                <Required>Y</Required>
+            </share>
+            <family type="TextField">
+                <Required>N</Required>
+            </family>
+        </general>
+        <HTTPwebconsole>
+            <enabled type="BooleanField">
+                <default>1</default>
+                <Required>Y</Required>
+            </enabled>
+            <address type="NetworkAliasField">
+                <default>127.0.0.1</default>
+                <Required>Y</Required>
+            </address>
+            <port type="PortField">
+                <default>7070</default>
+                <Required>Y</Required>
+                <Multiple>N</Multiple>
+                <EnableWellKnown>Y</EnableWellKnown>
+                <EnableRanges>N</EnableRanges>
+            </port>
+            <auth type="BooleanField">
+                <default>0</default>
+                <Required>Y</Required>
+            </auth>
+            <user type="TextField">
+                <default>i2pd</default>
+                <Required>N</Required>
+            </user>
+            <pass type="UpdateOnlyTextField">
+                <default>changeme</default>
+                <Required>N</Required>
+            </pass>
+            <strictheaders type="BooleanField">
+                <default>1</default>
+                <Required>Y</Required>
+            </strictheaders>
+            <hostname type="HostnameField">
+                <default>localhost</default>
+                <Required>N</Required>
+                <IpAllowed>N</IpAllowed>
+                <HostWildcardAllowed>N</HostWildcardAllowed>
+                <FqdnWildcardAllowed>N</FqdnWildcardAllowed>
+                <ZoneRootAllowed>N</ZoneRootAllowed>
+            </hostname>
+        </HTTPwebconsole>
+        <HTTPproxy>
+            <enabled type="BooleanField">
+                <default>1</default>
+                <Required>Y</Required>
+            </enabled>
+            <address type="NetworkAliasField">
+                <default>127.0.0.1</default>
+                <Required>Y</Required>
+            </address>
+            <port type="PortField">
+                <default>4444</default>
+                <Required>Y</Required>
+                <Multiple>N</Multiple>
+                <EnableWellKnown>Y</EnableWellKnown>
+                <EnableRanges>N</EnableRanges>
+            </port>
+        </HTTPproxy>
+    </items>
+</model>

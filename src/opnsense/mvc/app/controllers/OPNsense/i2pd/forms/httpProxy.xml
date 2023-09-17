@@ -1,0 +1,20 @@
+<form>
+    <field>
+        <id>i2pd.HTTPproxy.enabled</id>
+        <label>Enabled</label>
+        <type>checkbox</type>
+        <help>Enable the HTTP proxy (default: true)</help>
+    </field>
+    <field>
+        <id>i2pd.HTTPproxy.address</id>
+        <label>Address</label>
+        <type>text</type>
+        <help>Address service will listen on (default: 127.0.0.1)</help>
+    </field>
+    <field>
+        <id>i2pd.HTTPproxy.port</id>
+        <label>Port</label>
+        <type>text</type>
+        <help>Port service will listen on (default: 4444)</help>
+    </field>
+</form>
