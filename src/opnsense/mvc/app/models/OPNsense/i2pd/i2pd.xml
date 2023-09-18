@@ -15,6 +15,13 @@
                 <Required>N</Required>
                 <Multiple>Y</Multiple>
             </ifname>
+            <port type="PortField">
+                <default>4567</default>
+                <Required>Y</Required>
+                <Multiple>N</Multiple>
+                <EnableWellKnown>Y</EnableWellKnown>
+                <EnableRanges>N</EnableRanges>
+            </port>
             <bandwidth type="IntegerField">
                 <MinimumValue>1</MinimumValue>
                 <default>256</default>

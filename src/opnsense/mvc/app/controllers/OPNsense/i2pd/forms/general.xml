@@ -13,6 +13,12 @@
         <help>Add more than localhost IP addresses to listen IPs for connections.</help>
     </field>
     <field>
+        <id>i2pd.general.port</id>
+        <label>Port</label>
+        <type>text</type>
+        <help>Port to listen for connections. By default i2pd picks random port. You MUST pick a random number too, don't just uncomment this (default: 4567)</help>
+    </field>
+    <field>
         <id>i2pd.general.bandwidth</id>
         <label>Bandwidth</label>
         <type>text</type>
